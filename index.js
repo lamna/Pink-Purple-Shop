@@ -1,8 +1,7 @@
 $(document).ready(function(){
 	
 	$('#search').on('click',function(){
-		$('#search_here').show();
-		
+		$('#search_here').slideToggle( "slow" );		
 	});
 	
 	$(function() {
@@ -20,25 +19,41 @@ $(document).ready(function(){
 	}); 
 	
 	/*---------------selectmenu function  */ 
+	
 	$(function() {
 		$( "#sizeshop" ).selectmenu();	 
 		$( "#color" ).selectmenu();
     });
+		
+	/*---------------added to cart message/ saraDressCart  */
 	
-	
-	/*---------------added to cart message  */
-	
-	$('.addCartButton').click(function(){
-		$(".addedToCart").show();
+	$('.SaraDressCart').on('click',function(){
+		$('.addedToCart').show();
+		$('.saraDress').show();
 	});
-	
-	/*---------------my cart ------------------ */
-	
 
+		
+	/*---------------search box ------------------ */
 	
-  
-  
-	
-	
+	function runSearch(){
+		var a = [ "Sundress", "Maxis", "Party Dress", "Sweaters", "Coats", "Leggings" ];
+		var result = $('#tags').val();
+		for ( var i in a ){
+			if ( result == i ){
+				result.load( "dress.html" );
+			}
+			else {
+				alert("No Results Found" );
+			}
+		}
+	}
+		
+	$('#tags').on('keyup',function(ev){
+		var ENTER_KEY = 13;
+		if ( ev.keycode == 13 ){
+			runSearch();
+		}
+	}); 
+
 	
 });

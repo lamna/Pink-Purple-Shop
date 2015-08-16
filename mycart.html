@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Pink&Purple</title>
+		<title>My Cart</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="index.css">	
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<script type='text/javascript' src='index.js'></script>		
+		<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.4.min.js'></script>				
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">		
+		<script type='text/javascript' src='index.js'></script>	
 
 	</head>
 	<body id = "body">
@@ -21,7 +26,7 @@
 				<div class="col-md-3" id="cart">
 					<ul class="nav navbar-nav">
 						<li><a href="signIn.html">Sign In</a></li>
-						<li><a href="mycart.html" class="glyphicon glyphicon-shopping-cart">MyCart</a></li>					
+						<li><a href="mycart.html" class="glyphicon glyphicon-shopping-cart" >MyCart</a></li>					
 					</ul>				
 				</div>				
 			</div>
@@ -61,18 +66,20 @@
 			</div><hr>
 			<div class="row">
 				<div class="col-md-12">
-					<table width="100%">
-						<tr>
-							<th>PRODUCT</th>
-							<th>PRICE</th>
-							<th>QTY</th>
-							<th>REMOVE</th>
-							<th>PRICE</th>						
-						</tr>
-						<tr id="show-cart">
-							<td></td>
-						
-						
+					<table width="100%"  style="text-align:center;">
+						<tr >
+							<th style="text-align:center;">PRODUCT</th>
+							<th style="text-align:center;">PRICE</th>
+							<th style="text-align:center;">QTY</th>
+							<th style="text-align:center;">REMOVE</th>
+							<th style="text-align:center;">PRICE</th>						
+						</tr><br>
+						<tr class="saraDress" style="display:non;">
+							<td><a href="saradress.html"><img src="img/5.jpg" width="50" height="50" > SARA DRESS </td>
+							<td > $ 42.00 </td>
+							<td id="qty"> <input type="text" > </td>
+							<td id='remove'> X </td>
+							<td id="price"> $ 42.00</td>						
 						</tr>
 					</table>				
 				</div>			
@@ -81,7 +88,7 @@
 				<div class="col-md-4">
 					<h4 class="foot1">NEED HELP?</h4><br>
 					<ul class="footer">
-						<li><a href="size.html"> Size Guide</a></li>				
+						<li><a href="#">Size Guide</a></li>				
 						<li><a href="#"> FAQ</a></li>				
 						<li><a href="search.html"> Search</a></li>				
 					</ul>			
