@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="index.css">	
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.4.min.js'></script>				
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">		
+		<script type='text/javascript' src='index.js'></script>	
+
+	</head>
+	<body id ="body">
+		<div class="container">
+			<div class="row" id="topNav">
+				<div class="col-md-4"></div>
+				<div class="col-md-5"></div>
+				<div class="col-md-3" id="cart">
+					<ul class="nav navbar-nav">
+						<li><a href="signIn.html">Sign In</a></li>
+						<li><a href="mycart.html" class="glyphicon glyphicon-shopping-cart">MyCart</a></li>					
+					</ul>				
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div ><a href="index.html" style="text-decoration:none">
+					<h1><span id="pink"> PINK  & </span> <span id="purple"> PURPLE </span></h1>
+					<h4><span id= "logo">Girls Dress Shop</h4></span></a>
+					</div>					
+				</div>
+				<div class="col-md-8" id="mainNav">
+					<ul class="nav navbar-nav">
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Dresses" >Dresses<span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li><a href="dress.html">Sundress</a></li>
+								<li><a href="dress.html">Maxis</a></li>
+								<li><a href="dress.html">Party Dress</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Dresses" >More Apparel<span class="caret"></span> </a>
+							<ul class="dropdown-menu">
+								<li><a href="dress.html">Sweaters</a></li>
+								<li><a href="dress.html">Coats</a></li>
+								<li><a href="dress.html">Leggings</a></li>
+							</ul>
+						</li>
+						 <li><a href="lookbook.html" title="Lookbook">Lookbook</a></li>
+						 <li><a href="about.html" title="About">About</a></li>
+						 <li id="search"><a href="#" title="Search">Search</a></li>
+					</ul>				
+				</div>						
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-2" id="search_here" style="display:none;">
+					<form>
+						<input type="search" id="tags" style="background-color:pink;">
+					</form>			
+				</div>			
+			</div><hr>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 style="font-family:Chiller;font-size:100px">Contact Us</h2>
+				</div>			
+			</div><hr><br>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<h4>Pink & Purple Girls Dress Shop</h4>
+					<p>33rd St. Suite 911 <br>
+					Sanfrancisco city,CA 96754 <br>
+					info@pink&purple.com <br>
+					(408) 559-5040</p>
+				</div>
+				<div class="col-md-4"></div>			
+			</div><br>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<form  role="form">
+					    <div class="form-group">
+							<label for="fname">Name:</label>
+							<input type="text" class="form-control" id="email" placeholder=" Name" required>
+					    </div>
+					    <div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" placeholder="Email" required>
+					    </div>
+					    <div class="form-group">
+							<label for="tel">Phone:</label>
+							<input type="tel" class="form-control" id="phone" placeholder="phonenumber">
+					    </div>					    	
+						<div class="form-group">
+						  <label for="comment">Comment:</label>
+						  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+						<button type="submit" >Submit</button>
+					</form>
+				</div>	
+				<div class="col-md-3"></div>				
+			</div> <hr>
+			<div class="row">
+				<div class="col-md-4">
+					<h4 class="foot1">NEED HELP?</h4><br>
+					<ul class="footer">
+						<li><button type="button"  data-toggle="modal" data-target="#myModal">Size Guide</button>
+							<!-- Modal -->
+							<div id="myModal" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+										<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Toddler Size Guide </h4>
+										</div>
+										<div class="modal-body">
+											<table style="width:100%">
+												<tr>
+													<th></th>
+													<th>2T</th>
+													<th>3T</th>
+													<th>4T</th>
+												</tr>
+												<tr>
+													<td>HEIGHT</td>
+													<td>33-35.5in</td>
+													<td>36-38.5in</td>
+													<td>38-40.5in</td>					
+												</tr>
+												<tr>
+													<td>WEIGHT</td>
+													<td>25-28lbs</td>
+													<td>28-32lbs</td>
+													<td>32-36lbs</td>					
+												</tr>
+												<tr>
+													<td>CHEST</td>
+													<td>21-22in</td>
+													<td>22-23in</td>
+													<td>24-26in</td>					
+												</tr>
+												<tr>
+													<td>WAIST</td>
+													<td>20-20.5in</td>
+													<td>21-21.5in</td>
+													<td>22-22.5in</td>					
+												</tr>
+												<tr>
+													<td>SEAT</td>
+													<td>21-22in</td>
+													<td>22-23in</td>
+													<td>24-26in</td>					
+												</tr>					
+											</table>	
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>				
+						<li><a href="#"> FAQ</a></li>				
+						<li><a href="search.html"> Search</a></li>				
+					</ul>			
+				</div>
+				<div class="col-md-4">
+					<h4 class="foot1">ABOUT US</h4><br>
+					<ul class="footer">
+						<li><a href="about.html">The Pink & Purple Shop Story</a></li>				
+						<li><a href="contact.html">Contact Us</a></li>				
+						<li><a href="#">Privacy Policy</a></li>				
+						<li><a href="#">Terms of Use</a></li>				
+					</ul>			
+				</div>
+				<div class="col-md-4">
+					<h4>CONNECT WITH US</h4><br>
+					<form>
+					<input type="email" placeholder="Join our email list" required>
+					<button type="submit" value="Join"> Join</button>
+					</form><br>
+					<div id="social">
+						<i class="fa fa-facebook-square"></i>
+						<i class="fa fa-instagram"></i>
+						<i class="fa fa-twitter-square"></i>
+						<i class="fa fa-pinterest-square"></i>						
+					</div>
+				</div>				
+			</div><hr>
+			<div class="row">
+				<div class="col-md-12">
+					<p style="text-align:center">Copyright © 2015 Pink & Purple Girls Dress Shop</p>
+				</div>
+			</div>			
+		</div>
+	</body>
+</html>
