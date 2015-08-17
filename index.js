@@ -29,10 +29,14 @@ $(document).ready(function(){
 	
 	$('.SaraDressCart').on('click',function(){
 		$('.addedToCart').show();
-		$('.saraDress').show();
+		//$('.saraDress').show();
 	});
 
 		
+	/*---------------size guide ------------------ */
+	
+	$('#sizeTable table tr:nth-child(odd)').css( "background-color", "pink");
+	
 	/*---------------search box ------------------ */
 	
 	function runSearch(){
