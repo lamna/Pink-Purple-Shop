@@ -67,23 +67,37 @@
 			<div class="row">
 				<div class="col-md-12">
 					<table width="100%"  style="text-align:center;">
-						<tr >
-							<th style="text-align:center;">PRODUCT</th>
-							<th style="text-align:center;">PRICE</th>
-							<th style="text-align:center;">QTY</th>
-							<th style="text-align:center;">REMOVE</th>
-							<th style="text-align:center;">PRICE</th>						
-						</tr><br>
-						<tr class="saraDress" style="display:non;">
-							<td><a href="saradress.html"><img src="img/5.jpg" width="50" height="50" > SARA DRESS </td>
-							<td > $ 42.00 </td>
-							<td id="qty"> <input type="text" > </td>
-							<td id='remove'> X </td>
-							<td id="price"> $ 42.00</td>						
-						</tr>
-					</table>				
+						<thead>
+							<tr class="cart_head">
+								<th>PRODUCT</th>
+								<th>PRICE</th>
+								<th>QTY</th>
+								<th>REMOVE</th>
+								<th>PRICE</th>						
+							</tr><br>
+						</thead>
+						<tbody>
+							<tr class="saraDress" style="display:non;">
+								<td><a href="saradress.html"><img src="img/5.jpg" width="50" height="50" ><span id="id"> SARA DRESS </span></td>
+								<td><span id="price" data-value="42.00"> $ 42.00</span></td>
+								<td><input type="numeric" id="qty" value="1"></td>
+								<td><span id='remove'> X </span></td>
+								<td><span id="total_price"> $ 42.00 </span></td>						
+							</tr>
+						</tbody>
+					</table>
 				</div>			
-			</div><br><hr>			
+			</div><br><hr>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-4"></div>
+				<div class="col-md-2">
+					<div><h4>Subtotal</h4><span id="total"> </span> </div><hr>
+					<input type="button" id="update_cart" value="Update cart"/><br><br>
+					<input type="button" id="check_out" value="CheckOut"/>
+				</div>
+			</div><hr>
 			<div class="row">
 				<div class="col-md-4">
 					<h4 class="foot1">NEED HELP?</h4><br>
