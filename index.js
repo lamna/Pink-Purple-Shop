@@ -29,7 +29,7 @@ $(document).ready(function(){
 	
 	$('.SaraDressCart').on('click',function(){
 		$('.addedToCart').show();
-		//$('.saraDress').show();
+		$('.saraDress').show();
 	});
 
 		
@@ -40,24 +40,23 @@ $(document).ready(function(){
 	/*---------------search box ------------------ */
 	
 	function runSearch(){
-		var a = [ "Sundress", "Maxis", "Party Dress", "Sweaters", "Coats", "Leggings" ];
+		
+		//var a = [ "Sundress", "Maxis", "Party Dress", "Sweaters", "Coats", "Leggings" ];
 		var result = $('#tags').val();
-		for ( var i in a ){
-			if ( result == i ){
-				result.load( "dress.html" );
+		
+			if ( result !== "" ){
+				window.location = "dress.html";
 			}
-			else {
+			else if ( result === "" ) {
 				alert("No Results Found" );
 			}
-		}
+		
 	}
 		
 	$('#tags').on('keyup',function(ev){
 		var ENTER_KEY = 13;
-		if ( ev.keycode == 13 ){
+		if ( ev.keyCode == 13 ){
 			runSearch();
 		}
 	}); 
-
-	
 });
