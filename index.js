@@ -49,8 +49,7 @@ $(document).ready(function(){
 			}
 			else if ( result === "" ) {
 				alert("No Results Found" );
-			}
-		
+			}		
 	}
 		
 	$('#tags').on('keyup',function(ev){

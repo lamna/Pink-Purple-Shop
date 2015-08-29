@@ -19,6 +19,8 @@ body{
 	background-color:white;
 	font-family:Lucida Bright;
 	color:purple;
+	margin-top:-5px;
+
 }
 
 #pink{
@@ -46,7 +48,11 @@ body{
 
 #topNav{
 	background-image:url('pink_rice/pink_rice.png');
-	
+}
+
+#topNav_sides{
+	background-image:url('fresh_snow/fresh_snow.png');
+	border:none;
 }
 
 #topNav ul li a{
@@ -123,6 +129,17 @@ button{
 .cart_head th{
 	text-align:center;
 }
+/*
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 480px) {
+	
+
+} */
+
+
 
 
 
