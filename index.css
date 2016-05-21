@@ -2,8 +2,16 @@
 	border:1px solid pink;
 }
 
-body{
+#body{
 	background-image:url('fresh_snow/fresh_snow.png');
+	background-attachment: fixed;
+    background-position: 50% 50%;
+    max-width: 100%;
+    position: relative;
+    height: 900px;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
 }
 .container{
 	background-color:white;
